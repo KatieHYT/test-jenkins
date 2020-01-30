@@ -14,6 +14,8 @@ pipeline {
 	    steps {
 		sh 'python echo_name.py'
             }
+        steps {
+        sh 'python web_application_test/test.py'}
             }
         }
     }
