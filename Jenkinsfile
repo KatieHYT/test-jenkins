@@ -12,7 +12,7 @@ pipeline {
             }
     stage('Build2') { 
 	    steps {
-               pip install -r web_application_test/requirements.txt
+               sh 'pip install -r web_application_test/requirements.txt'
             }
         }
     stage('Test2'){
