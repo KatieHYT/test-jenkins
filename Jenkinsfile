@@ -10,12 +10,15 @@ pipeline {
                 sh 'echo && pwd'
             }
         }
-	stage('Test') {
+	stage('Test1') {
 	    steps {
 		sh 'python echo_name.py'
             }
+            }
+    stage('Test2'){
         steps {
-        sh 'python web_application_test/test.py'}
+        sh 'python web_application_test/test.py'
+        }
             }
         }
     }
