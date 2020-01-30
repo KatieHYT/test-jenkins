@@ -7,6 +7,9 @@ pipeline {
                     image 'python:2-alpine' 
                 }
             }
+	    steps {
+                sh 'echo && pwd'
+            }
         }
 	stage('Test') {
 	    steps {
