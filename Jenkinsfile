@@ -7,7 +7,7 @@ pipeline {
     stages {
 	    stage('Test1') {
 	        steps {
-		        sh 'echo 1+2=3HELLO WORLD!!!! merge dev-1'
+		        sh 'echo 1+2=3HELLO WORLD!!!conflict! merge dev-1'
             }
             }
         stage('Build2') { 
