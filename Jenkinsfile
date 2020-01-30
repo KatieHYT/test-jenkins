@@ -1,12 +1,11 @@
 pipeline {
-    agent none 
+    agent {
+        docker {
+            image 'python:3.7.2'
+    }
+}
     stages {
         stage('Build') { 
-            agent {
-                docker {
-                    image 'python:2-alpine' 
-                }
-            }
 	    steps {
                 sh 'echo && pwd'
             }
