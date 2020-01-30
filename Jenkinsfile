@@ -7,8 +7,10 @@ pipeline {
                     image 'python:2-alpine' 
                 }
             }
-            steps {
-                sh 'python echo_name.py' 
+        }
+	stage('Test') {
+	    steps {
+		sh 'python echo_name.py'
             }
         }
     }
