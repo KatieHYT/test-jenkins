@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'python:3.7.2'
+            image 'yuting2727/kth_plygnd:191009'
     }
 }
     stages {
